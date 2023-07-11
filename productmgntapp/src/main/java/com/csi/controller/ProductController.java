@@ -80,4 +80,9 @@ public class ProductController {
         productServiceImpl.deleteAllData();
         return ResponseEntity.ok("All Data Deleted Successfully");
     }
+
+    @GetMapping("/say")
+    public String sayhello(){
+        return "Welcome To Csi Pune";
+    }
 }
