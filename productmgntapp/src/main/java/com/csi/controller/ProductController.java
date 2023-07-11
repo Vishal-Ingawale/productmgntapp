@@ -85,4 +85,9 @@ public class ProductController {
     public String sayhello(){
         return "Welcome To Csi Pune";
     }
+
+    @GetMapping("/hello")
+    public ResponseEntity<String> hello(){
+        return ResponseEntity.ok("Welocome To Pune");
+    }
 }
